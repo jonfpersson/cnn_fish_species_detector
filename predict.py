@@ -21,7 +21,6 @@ def get_prob():
 
     out = model.predict(np.array(img))
     prediction = np.argmax(out)
-    top10 = out[0].argsort()[-10:][::-1]
 
     class_indices = dict(zip(classes, range(len(classes))))
     keys = list(class_indices.keys())
