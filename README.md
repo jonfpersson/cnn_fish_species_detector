@@ -27,3 +27,5 @@ Tensorflow 2.4.1
 Cuda 11.1
 
 cuDNN version 8
+
+Keras 2.3.1
