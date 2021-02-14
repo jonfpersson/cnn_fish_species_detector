@@ -1,4 +1,4 @@
-# cnn_fish_species_detector
+# Fish species detector
 
 A convolutional neural network based on VGG19 able to differtiate spieces of fish.
 
