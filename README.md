@@ -2,7 +2,7 @@
 
 A convolutional neural network based on VGG19 able to differtiate spieces of fish.
 
-Project includes:
+# Project includes:
 
 Server.py for loading model and evaluate pictures
 
@@ -20,4 +20,10 @@ data/validation
 
 data/train
 
+# Libs needed:
 
+Tensorflow 2.4.1
+
+Cuda 11.1
+
+cuDNN version 8
