@@ -1,3 +1,6 @@
+data/
+vgg19Model.h5
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
