@@ -12,7 +12,7 @@ main.py loading of dataset
 
 vgg19.py handles training and definition of model
 
-Datastructure follows:
+# Datastructure follows:
 
 data/test
 
