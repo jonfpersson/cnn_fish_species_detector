@@ -45,7 +45,7 @@ parser.add_argument('--path')
 args = parser.parse_args()
 path = args.path
 
-classes = ['Brax', 'Debris', 'Lying' ,'Perch', 'Pike' , 'Roach']
+classes = ['Brax', 'Debris','Perch', 'Pike' , 'Roach']
 
 get_prob()
 #evaluateModel()     

@@ -23,19 +23,9 @@ print('Model loaded')
 server_address = ('0.0.0.0', 4224)
 buffer_size = 4096
 
-
-print('Warming up the model')
-start = time.perf_counter()
-input_shape = (1, ) + (224, 224, 3)
-dummpy_img = np.ones(input_shape)
-dummpy_img = preprocess_input(dummpy_img)
-model.predict(dummpy_img)
-end = time.perf_counter()
-print('Warming up took {} s'.format(end - start))
-
 FILE_DOES_NOT_EXIST = '-1'
 UNKNOWN_ERROR = '-2'
-classes = ['Brax', 'Debris', 'Lying' ,'Perch', 'Pike' , 'Roach']
+classes = ['Brax', 'Debris','Perch', 'Pike' , 'Roach']
 
 
 def handle(clientsocket):
