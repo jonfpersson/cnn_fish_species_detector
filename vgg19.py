@@ -11,7 +11,7 @@ tf.config.experimental.set_memory_growth(physical_devices[0], True)
 def train(ck, train_it, val_it):
     #Defining the hyperparameters
     batch_size= 30
-    epochs=100
+    epochs=150
     learn_rate=.0001
     opt= SGD(lr=learn_rate, momentum=.9, nesterov=False)
 
@@ -36,7 +36,7 @@ def train(ck, train_it, val_it):
     model_vgg19.fit(train_it,
                     epochs=epochs,
                     batch_size=batch_size,
-                    steps_per_epoch = 20,
+                    steps_per_epoch = 30,
                     validation_data = val_it,
                     validation_steps = 250,
                     callbacks = ck,

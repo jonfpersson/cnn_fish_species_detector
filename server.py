@@ -64,8 +64,6 @@ def handle(clientsocket):
                 predicted_class = keys[values.index(prediction)]
                 propability = out[0][values.index(prediction)]
                 response = '{"class":"%s", "probability":"%s"}' % (predicted_class, propability)
-                print("Response")
-                print(response)
             except Exception as e:
                 print('Error', e)
                 traceback.print_stack()

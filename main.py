@@ -10,6 +10,10 @@ train_it = datagen.flow_from_directory('data/train/', class_mode='categorical', 
 # load and iterate validation dataset
 val_it = datagen.flow_from_directory('data/validation/', class_mode='categorical', batch_size=30, target_size=(224, 224))
 
+#train_generator = ImageDataGenerator(rotation_range=2, horizontal_flip=True, zoom_range=.1 )
+#train_generator.fit(train_it)
+
+
 #Callback
 ck = tf.keras.callbacks.EarlyStopping(monitor='loss', patience=15)
 train(ck, train_it, val_it)
