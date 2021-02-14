@@ -5,11 +5,12 @@ import cv2
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
-
+physical_devices = tf.config.experimental.list_physical_devices('GPU')
+tf.config.experimental.set_memory_growth(physical_devices[0], True)
 def evaluateModel():
     datagen = ImageDataGenerator()
     test_it = datagen.flow_from_directory('data/test', class_mode='categorical', batch_size=30, target_size=(224, 224))
-    loss = model.evaluate(test_it, steps=500, verbose = 1)
+    loss = model.evaluate(test_it, steps=100, verbose = 1)
     print(f'Test loss: {loss[0]} / Test accuracy: {loss[1]}')
 
 def get_prob():
@@ -47,5 +48,5 @@ path = args.path
 
 classes = ['Brax', 'Debris','Perch', 'Pike' , 'Roach']
 
-get_prob()
-#evaluateModel()     
+#get_prob()
+evaluateModel()     
