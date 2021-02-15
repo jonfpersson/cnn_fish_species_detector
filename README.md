@@ -1,6 +1,6 @@
 # Implementation of VGG19 with added trainable layers
 
-A convolutional neural network based on VGG19 able to differtiate spieces of fish.
+A convolutional neural network based on VGG19 able to classify pictures
 
 # Project includes:
 
